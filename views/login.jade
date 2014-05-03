@@ -1,0 +1,37 @@
+doctype html5
+html(class="no-js")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+    link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet" href="/css/main.css")
+body()
+  div(class="container" )
+    h1 Welcome to the login page
+    form(action="/tasks/login", method="post")
+      input(type="text", class="form-control", name="email", placeholder="Email")
+      input(type="password", class="form-control", name="password", placeholder="Password")
+      button(type="submit", class="btn btn-primary btn-lg") Login
+
+    a(href="/tasks/auth/facebook" class="btn btn-primary")
+      span(class="fa fa-facebook")  Facebook 
+
+    p Need an account?  
+      a(href="/tasks/signup") Signup
+
+
+    script(src="/bower_components/jquery/jquery.js")
+    script(src="/bower_components/angular/angular.js")
+    script(src="/bower_components/bootstrap/dist/js/bootstrap.js")
+    script(src="/bower_components/angular-resource/angular-resource.js")
+    script(src="/bower_components/angular-cookies/angular-cookies.js")
+    script(src="/bower_components/angular-sanitize/angular-sanitize.js")
+    script(src="/bower_components/angular-route/angular-route.js")
+    script(src="/bower_components/angular-bootstrap/ui-bootstrap.js")
+    script(src="/scripts/app.js")
+    script(src="/scripts/services/todos.js")
+    script(src="/scripts/services/assignto.js")
+    script(src="/scripts/controllers/main.js")
+    
