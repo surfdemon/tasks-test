@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var flash = require('connect-flash');
 var app = express();
-  
+
 mongoose.connect('mongodb://localhost/test');
 
 var db = mongoose.connection;
