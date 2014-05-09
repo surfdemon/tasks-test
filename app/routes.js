@@ -11,7 +11,7 @@ module.exports = function(app, passport){
 		res.render('login', {message : req.flash('loginMessage')});
 	});
 	app.post('/tasks/login', passport.authenticate('local-login', {
-		successRedirect : '/tasks/app',
+		successRedirect : '/',
 		failureRedirect : '/tasks/login',
 		failureFlash : true
 	}));
@@ -19,7 +19,7 @@ module.exports = function(app, passport){
 		res.render('signup', {message : req.flash('signMessage')});
 	});
 	app.post('/tasks/signup', passport.authenticate('local-signup',{
-		successRedirect : '/tasks/app',
+		successRedirect : '/',
 		failureRedirect : '/tasks/signup',
 		failureFlash : true
 	}));
@@ -34,7 +34,7 @@ module.exports = function(app, passport){
 	});
 	app.get('/tasks/auth/facebook', passport.authenticate('facebook', { scope : 'email' }));
 	app.get('/tasks/auth/facebook/callback', passport.authenticate('facebook', {
-		successRedirect : '/tasks/app',
+		successRedirect : '/',
 		failureRedirect : '/tasks/login'
 	}));
 };
