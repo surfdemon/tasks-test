@@ -35,6 +35,6 @@ app.configure(function(){
 
 require('./app/routes.js')(app, passport);
 
-var server = app.listen(3000, function(){
+var server = app.listen(8082, function(){
   console.log('Listening on port %d', server.address().port);
 });
