@@ -1,5 +1,5 @@
 module.exports = function(app, passport){
-	app.get('/', isLoggedIn, function(req, res){
+	app.get('/', function(req, res){
 	  res.render('tasks-app-index', {
 	  	user : req.user
 	  });
