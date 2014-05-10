@@ -1,8 +1,6 @@
 module.exports = function(app, passport){
 	app.get('/', function(req, res){
-	  res.render('tasks-app-index', {
-	  	user : req.user
-	  });
+	  res.render('tasks-app-index');
 	});
 	app.get('/tasks', function(req, res){
 	  res.render('tasks');
