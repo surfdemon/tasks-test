@@ -19,9 +19,6 @@ app.configure(function(){
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
 
-	app.set('view engine', 'jade');
-	app.set('vies', './views');
-
 	app.use(express.static('./public'));
 	app.use(express.compress());
 	app.use(express.responseTime());
